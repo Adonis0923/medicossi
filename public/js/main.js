@@ -102,30 +102,30 @@ $(document).ready(function () {
     $("#panel").slideToggle(200);
   });
   //------Fechas------//
-  $(".datepicker").datepicker({
-    language: "es",
-    dateFormat: "dd-mm-yy",
-    endDate: new Date(),
-  });
-  $(".datepicker2").datepicker({
-    language: "es",
-    dateFormat: "dd-mm-yy",
-    startDate: new Date(),
-  });
-  $(".datepicker3").datepicker({
-    language: "es",
-    dateFormat: "dd-mm-yy",
-  });
-  $(".date-range1").datepicker({
-    language: "es",
-    dateFormat: "dd-mm-yy",
-    endDate: new Date(),
-  });
-  $(".date-range2").datepicker({
-    language: "es",
-    dateFormat: "dd-mm-yy",
-    endDate: new Date(),
-  });
+  // $(".datepicker").datepicker({
+  //   language: "es",
+  //   dateFormat: "dd-mm-yy",
+  //   endDate: new Date(),
+  // });
+  // $(".datepicker2").datepicker({
+  //   language: "es",
+  //   dateFormat: "dd-mm-yy",
+  //   startDate: new Date(),
+  // });
+  // $(".datepicker3").datepicker({
+  //   language: "es",
+  //   dateFormat: "dd-mm-yy",
+  // });
+  // $(".date-range1").datepicker({
+  //   language: "es",
+  //   dateFormat: "dd-mm-yy",
+  //   endDate: new Date(),
+  // });
+  // $(".date-range2").datepicker({
+  //   language: "es",
+  //   dateFormat: "dd-mm-yy",
+  //   endDate: new Date(),
+  // });
   $("body").on("change", ".date-range1", function () {
     r = $(".date-range1").val();
     $(".date-range2").datepicker("destroy");

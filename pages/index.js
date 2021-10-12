@@ -1,11 +1,13 @@
+import IndexContainer from '../components/indexContainer'
 
-
-function HomePage(){
+function Index(){
     return (
         <>
-            <h1>Home page</h1>
+            <IndexContainer>
+                <h1>Index</h1>
+            </IndexContainer>    
         </>
     )
 }
 
-export default HomePage;
+export default Index;
