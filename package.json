@@ -1,0 +1,23 @@
+{
+  "name": "medicossi2",
+  "version": "2.0.0",
+  "description": "This is medicossi nextjs application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified \\\" && exit 1",
+    "dev": "next",
+    "next": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "medicossi",
+    "nextjs"
+  ],
+  "author": "adonis",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
