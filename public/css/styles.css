@@ -2143,11 +2143,11 @@ div.custom-control-right {
     		border: 2px solid #0060db;
     		border-radius: 5px;
     		padding: 1rem;
-    		color:
-    		-webkit-transition: -webkit-transform 300ms ease;
-    		transition: -webkit-transform 300ms ease;
-    		transition: transform 300ms ease;
-    		transition: transform 300ms ease, -webkit-transform 300ms ease;
+    		/* color: */
+    		/* -webkit-transition: -webkit-transform 300ms ease; */
+    		/* transition: -webkit-transform 300ms ease; */
+    		/* transition: transform 300ms ease; */
+    		/* transition: transform 300ms ease, -webkit-transform 300ms ease; */
     	}
     	.radio-tile-group .input-container .icon i {
     		fill: #079ad9;
@@ -3401,7 +3401,7 @@ a.anclasClick:hover {
 
 .parallax {
 	/* The image used */
-	background-image: url("../img/parallax2.jpg");
+	/* background-image: url("../img/parallax2.jpg"); */
 	min-height: 270px;
 	background-attachment: fixed;
 	background-position: center;
@@ -4730,7 +4730,7 @@ p span.font_sm {
 	max-width: 680px;
 	margin: 30px auto;
 }
-}
+/* } */
 @media screen and (min-width: 401px) and (max-width: 520px) {
 
 	/*||||||||||||||||||| Index |||||||||||||||||||||||*/
