@@ -30,7 +30,7 @@ function IndexContainer({children}){
                 wow.init(); */}
             </script>
             <script src="js/main.js"></script>
-
+            
             <Footer />
         </>
     ) 

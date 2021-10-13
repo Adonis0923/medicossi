@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
-function Navbar(){
-
+function Navbar(props){
+    // console.log('navbar init');
     const urls = [
         {url: 'index', text: 'Inicio'},
         {url: 'service', text: 'Servicios'},
@@ -11,11 +12,21 @@ function Navbar(){
         {url: 'contact', text: 'Contacto'},
         {url: 'plans', text: 'Planes'}
     ]
+    const router = useRouter()
+    const [landing, setLanding] = useState('')
 
     let setLandingActive = (url) => {
         console.log(url);
         setLanding(url);
     }
+    useEffect(() => {
+        console.log(router.pathname);
+        // console.log(router.pathname.split('/'))
+        let url = router.pathname.split('/')[1]
+        if(url == '') setLanding('index')
+        else setLanding(url)
+        // console.log(landing);
+    })
     return (
         <>
             <header>
@@ -36,7 +47,7 @@ function Navbar(){
                                 urls.map((item, index) => {
                                     return (
                                         <li className="nav-item mx-2" key = {index}>
-                                            <Link href = {`/${item.url == 'index' ? "" : item.url}`}><a className={`nav-link `}>{item.text} </a></Link>
+                                            <Link href = {`/${item.url == 'index' ? "" : item.url}`}><a className={`nav-link ${landing == item.url ? "active2" : ""}`}>{item.text} </a></Link>
                                         </li>
                                     )
                                 })

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
-import LoginModal from './loginModal'
+import LoginModal from '../modal/loginModal'
+import VideoModal from '../modal/videoModal'
 
 function Footer() {
     
@@ -85,6 +86,7 @@ function Footer() {
                 </a>
                 </div> --}} */}
             </footer>
+            <VideoModal />
             <LoginModal showModal = {showModal} />
         </>
     )
